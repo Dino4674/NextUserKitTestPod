@@ -6,7 +6,7 @@
 //  Copyright © 2015 NextUser. All rights reserved.
 //
 
-#import "NextUserKit.h"
+#import "NUTracker.h"
 
 @class NUTrackerSession;
 @class NUPrefetchTrackerClient;
