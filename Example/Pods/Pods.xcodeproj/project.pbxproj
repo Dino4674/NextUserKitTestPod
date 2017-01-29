@@ -31,8 +31,13 @@
 		0D1FFD30267C0776FD3E88EFF51E312F /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0FB76619DD2441990CAC457B1637EE /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DF555ADB4955C4C6DCE68388337BCC1 /* PNAPNSAPICallBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = B90383F855F9D387789CCC6ABD3C613B /* PNAPNSAPICallBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E0EFA1BEC7AD3F7A4C85FFD15E4ED05 /* PNClientStateParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 70880F133727C8199E32EDDDC6964CD4 /* PNClientStateParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		10F6498B0C4C1D4F7A80D935B565296A /* NUPurchaseDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = E6947FFBCED18326E6447528AD2F41CB /* NUPurchaseDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10F9E5F05B4ACCA4A0CC480A6ECA0B82 /* PNChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6D6BB1ADC94E33B31D4CEE982A0C0F /* PNChannel.m */; };
+		1112E2541E3E5F2B0059FC37 /* NUAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1112E24E1E3E5F2B0059FC37 /* NUAction.h */; };
+		1112E2551E3E5F2B0059FC37 /* NUErrorDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1112E24F1E3E5F2B0059FC37 /* NUErrorDefinitions.h */; };
+		1112E2561E3E5F2B0059FC37 /* NUPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1112E2501E3E5F2B0059FC37 /* NUPurchase.h */; };
+		1112E2571E3E5F2B0059FC37 /* NUPurchaseDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 1112E2511E3E5F2B0059FC37 /* NUPurchaseDetails.h */; };
+		1112E2581E3E5F2B0059FC37 /* NUPurchaseItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1112E2521E3E5F2B0059FC37 /* NUPurchaseItem.h */; };
+		1112E2591E3E5F2B0059FC37 /* NUTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1112E2531E3E5F2B0059FC37 /* NUTracker.h */; };
 		11A15DFFBCBED8216F662365C6E06CA7 /* PNTimeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D027A1BE777712352FC7D19EB0A8580 /* PNTimeResult.m */; };
 		11A56E164DC4966080911C154B3B3DCB /* PNSubscribeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 03358281F8C7519B577F2F10B2DAC96A /* PNSubscribeParser.m */; };
 		11DE72EB2F17452167212512A192974A /* NUDDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A6F031EC23D03898AAEA9613032286 /* NUDDLog.m */; };
@@ -52,7 +57,6 @@
 		1DA7172FDA8C5653C8CD2AFA0788F7D2 /* PNStateAuditAPICallBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E6087488AF0EF69C3CD8BC8A5787A03A /* PNStateAuditAPICallBuilder.m */; };
 		1DC173B6FC8039D9DC32039C6CEB2651 /* PNStreamModificationAPICallBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = F158A1A302DBFF871589A4656862432A /* PNStreamModificationAPICallBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC113A1B277932E746438D32DA4E011 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21C89E421452D6EF249160949D2D29AC /* NUErrorDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 364EC92F0B36578BA85480EE47734DEF /* NUErrorDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		226E6A6E6B7FCE8629500B86769CB6A7 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B520761FA518C557880518494C442A16 /* DDMultiFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		23EFB184AD12FB1014FFC765CE0D710A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1507D94EC670C84664FA49579965EA /* Security.framework */; };
 		2402793EFAA963A797D17D8C13F24B7A /* PNChannelGroupsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 819D205174AC239C544105907AF1AA29 /* PNChannelGroupsResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -124,14 +128,12 @@
 		53D4700D729CB4E20F430F66E528E866 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 798BE308B140C283F3BB796DC14325DC /* DDDispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5567F8A8A521696997455304D7F3C6FC /* PNErrorParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 42811554D625F22F8D503E52F9911454 /* PNErrorParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		55ABA070EE224BDFAED54A74B7389704 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D12CAB13E5C0D3224404DE52DC1E74E2 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		564476EE512DD347C7BFC335CE2BFACD /* NUTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 28E3367CF62BF9FF0F539BB7D9D43004 /* NUTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5888BA7D0FF90BE43D32E92F71A3E776 /* NUPurchase+Serialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B2266EBF73E8A6AA1090459E264E536E /* NUPurchase+Serialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59C3C716CDCF8C982FF984239FD8D284 /* PNClientStateUpdateStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F792AD5C29520FA20DFD34B6E9427FBE /* PNClientStateUpdateStatus.m */; };
 		5A11D874F3B3321A2A1FD592DACC8BDC /* PNPresenceHereNowAPICallBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5D1C69A0AD372602CDDCE42ECC84F3 /* PNPresenceHereNowAPICallBuilder.m */; };
 		5A1D34D104D42B1EE399E23BCD7935A0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FF367CFED29A34824B574747F7AE457E /* AFURLResponseSerialization.m */; };
 		5A1F117C51E0DE780796302817BC45C1 /* PNPublishSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F9DD4E98824564E3F46B062854B91C /* PNPublishSequence.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5B68E6A9217F1C6713246592B5BEBED7 /* NUPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5BD32A05532DAE33D1F05B6DF0EA98 /* NUPurchase.m */; };
-		5BA1755B6C344AD9A323D93DCBCC0BEF /* NUAction.h in Headers */ = {isa = PBXBuildFile; fileRef = C4478B5E12349F6E4B8BEBF051DBB0B8 /* NUAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C202FF71141474B6B1C5F9C493960EB /* NUHTTPRequestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A88C0B4B8EE90EF2A211ED5AEBB4423 /* NUHTTPRequestUtils.m */; };
 		5F2784C09147EE2C569793C95BFD20AC /* PNConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1FF134886B8E7DE435F2AC81974BDA /* PNConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5F28CEBAD75A1027612862C95D2B3B71 /* NUPurchaseDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E3F26E7FF87049D7E4917ADFC90936 /* NUPurchaseDetails.m */; };
@@ -200,7 +202,6 @@
 		8CC223080EC13181807DEB7AD9044801 /* PNUnsubscribeAPICallBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8A15428B5CA07DED659FD3C595C933 /* PNUnsubscribeAPICallBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D4D4E8E4D24EFD0B7BE05E326956B0C /* NUIAMNotificationView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 99C4E0C9661ED7247F4160A6C19FC48C /* NUIAMNotificationView.xib */; };
 		8DA2F63437313B459A3A90A3EC9B543E /* NSURLSessionConfiguration+PNConfigurationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 382F171D20CF5C34998920900EBC9388 /* NSURLSessionConfiguration+PNConfigurationPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8DB1361B37FB88BC4DDBD8C1E96E0754 /* NUPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1453BEB33864BB6CC1FF1070022F7572 /* NUPurchase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DCF73B91A5292AAD29250C0891A9C6B /* PNPresenceHereNowParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C490C998F76B50DEED5EA1D6D327A728 /* PNPresenceHereNowParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8E4FFE52D0818C2A4BCF7C6691C4477A /* PNAPNSModificationAPICallBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 547221F35373ADDD26D20F032C53553C /* PNAPNSModificationAPICallBuilder.m */; };
 		8F76C5F37E8242B88EF6C49529A86943 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B52979318E4EC2B8B89116BFC9B9567 /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -339,7 +340,6 @@
 		F2D899C7AA0D7FC20160091BB9D31CF3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 780470A3E3D0ADB175B78CC25DA5DA46 /* UIImageView+AFNetworking.m */; };
 		F3845EA84CB80B32A7E1A4244991AD3F /* NSURLSessionConfiguration+PNConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 389E40C361A26FE4A405EA49475706D4 /* NSURLSessionConfiguration+PNConfiguration.m */; };
 		F393F3DD5E07FEF29CED0685EBFF3355 /* NUIAMNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7862D9287056FC10ED31477F9C8C3054 /* NUIAMNotificationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F571CBF2CE379ECA6553858B80829B6F /* NUPurchaseItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 572223F417C765F97A951DAD7C8B9F42 /* NUPurchaseItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F57263E9A86E8418BB854CB7582D94B6 /* PNTimeAPICallBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 09EBB7460650F66F0B19AC9BB93C8FB3 /* PNTimeAPICallBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F69E9AD6DDEAE3DF95A53004A50DD3BF /* PNReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 386EB77A6B9499BE3D5AD47611950D59 /* PNReachability.m */; };
 		F6BB43C820B515D0814D7D56891D8647 /* PNSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 498ED711FDFB88B43D649774FDD6CF5F /* PNSubscriber.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -428,17 +428,22 @@
 		10A99F22CBC0B547BE6C16756A44D12C /* PNSubscribeChannelsOrGroupsAPIBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNSubscribeChannelsOrGroupsAPIBuilder.m; path = "PubNub/Data/Builders/API Call/Subscribe/PNSubscribeChannelsOrGroupsAPIBuilder.m"; sourceTree = "<group>"; };
 		10FF33D5DE76B3458FC046F308720A48 /* PNLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLLogger.h; path = PubNub/Misc/Logger/Core/PNLLogger.h; sourceTree = "<group>"; };
 		110F3E0BB717376807295DEFB8B9084B /* NUTracker+Tests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NUTracker+Tests.h"; sourceTree = "<group>"; };
+		1112E24E1E3E5F2B0059FC37 /* NUAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUAction.h; sourceTree = "<group>"; };
+		1112E24F1E3E5F2B0059FC37 /* NUErrorDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUErrorDefinitions.h; sourceTree = "<group>"; };
+		1112E2501E3E5F2B0059FC37 /* NUPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUPurchase.h; sourceTree = "<group>"; };
+		1112E2511E3E5F2B0059FC37 /* NUPurchaseDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUPurchaseDetails.h; sourceTree = "<group>"; };
+		1112E2521E3E5F2B0059FC37 /* NUPurchaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUPurchaseItem.h; sourceTree = "<group>"; };
+		1112E2531E3E5F2B0059FC37 /* NUTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUTracker.h; sourceTree = "<group>"; };
 		11E3C30F664AD775762B6A7E6DB09FA1 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		1208C90AB5949F26C258969998317DEC /* PNStreamModificationAPICallBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNStreamModificationAPICallBuilder.m; path = "PubNub/Data/Builders/API Call/Stream/PNStreamModificationAPICallBuilder.m"; sourceTree = "<group>"; };
 		1448E301129092A81943493397C5117C /* PNSubscribeAPIBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNSubscribeAPIBuilder.h; path = "PubNub/Data/Builders/API Call/Subscribe/PNSubscribeAPIBuilder.h"; sourceTree = "<group>"; };
-		1453BEB33864BB6CC1FF1070022F7572 /* NUPurchase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NUPurchase.h; sourceTree = "<group>"; };
 		14C901BB007DD43D5A14CCAC2797EEBC /* NUInAppMessageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NUInAppMessageManager.m; sourceTree = "<group>"; };
 		150F333C50AA1B14FB4FEDF166243814 /* PNPresenceChannelGroupHereNowAPICallBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPresenceChannelGroupHereNowAPICallBuilder.h; path = "PubNub/Data/Builders/API Call/Presence/PNPresenceChannelGroupHereNowAPICallBuilder.h"; sourceTree = "<group>"; };
 		15207802E2ABD0509549AF07F1F9275A /* PubNub+Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+Core.h"; path = "PubNub/Core/PubNub+Core.h"; sourceTree = "<group>"; };
 		1645A36B1407B8A6224AB2B3AC8EED30 /* PNNetworkResponseSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNNetworkResponseSerializer.h; path = PubNub/Network/PNNetworkResponseSerializer.h; sourceTree = "<group>"; };
 		16F68E4DD52715482D08CEB7CAC7AA6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17331EE0E537E6A784BA5F13E6F30E25 /* PNPublishStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPublishStatus.h; path = "PubNub/Data/Service Objects/PNPublishStatus.h"; sourceTree = "<group>"; };
-		174908C344C7B4FDF9E612988A0CB113 /* NextUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NextUser.framework; path = NextUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		174908C344C7B4FDF9E612988A0CB113 /* NextUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NextUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F3FE461C6DC75725E7756C80F66E3E /* PubNub+APNS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+APNS.m"; path = "PubNub/Core/PubNub+APNS.m"; sourceTree = "<group>"; };
 		182E182FA5234EC20A90C105258609F1 /* PNServiceData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNServiceData.h; path = "PubNub/Data/Service Objects/PNServiceData.h"; sourceTree = "<group>"; };
 		1A88C0B4B8EE90EF2A211ED5AEBB4423 /* NUHTTPRequestUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NUHTTPRequestUtils.m; sourceTree = "<group>"; };
@@ -465,8 +470,7 @@
 		2884F53EA2585C4F18C9D087BD3D5BC8 /* PNAcknowledgmentStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNAcknowledgmentStatus.h; path = "PubNub/Data/Service Objects/PNAcknowledgmentStatus.h"; sourceTree = "<group>"; };
 		28C5EFCB6B823D76756A9F65EBA0D516 /* Pods-NextUser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NextUser_Example.release.xcconfig"; sourceTree = "<group>"; };
 		28CC3F0E79BBB0785E7032B66F205CEB /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		28E3367CF62BF9FF0F539BB7D9D43004 /* NUTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NUTracker.h; sourceTree = "<group>"; };
-		291AAF725F87D0B721AF42282BA612D4 /* Pods-NextUser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NextUser_Example.modulemap"; sourceTree = "<group>"; };
+		291AAF725F87D0B721AF42282BA612D4 /* Pods-NextUser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NextUser_Example.modulemap"; sourceTree = "<group>"; };
 		291B8B256EE102659D445997561208E7 /* PNAPNSEnabledChannelsResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNAPNSEnabledChannelsResult.h; path = "PubNub/Data/Service Objects/PNAPNSEnabledChannelsResult.h"; sourceTree = "<group>"; };
 		29A9FC0B8C8DFD39FC1F7EA645D5F7EA /* PNTimeAPICallBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNTimeAPICallBuilder.m; path = "PubNub/Data/Builders/API Call/Time/PNTimeAPICallBuilder.m"; sourceTree = "<group>"; };
 		2B3E154C238EF697926DDFA14F56B61C /* PNURLBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNURLBuilder.m; path = PubNub/Network/PNURLBuilder.m; sourceTree = "<group>"; };
@@ -490,7 +494,6 @@
 		34DFAC373FB4C6257BD8D8A54E6A0DD9 /* PNStatus+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PNStatus+Private.h"; path = "PubNub/Data/Service Objects/PNStatus+Private.h"; sourceTree = "<group>"; };
 		35653571EBF1E0D0B220B17D14306D92 /* NURoundedDismissButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NURoundedDismissButton.m; sourceTree = "<group>"; };
 		3636290AB162ECD6890B63D8CF7C3D17 /* PubNub+ChannelGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+ChannelGroup.m"; path = "PubNub/Core/PubNub+ChannelGroup.m"; sourceTree = "<group>"; };
-		364EC92F0B36578BA85480EE47734DEF /* NUErrorDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NUErrorDefinitions.h; sourceTree = "<group>"; };
 		374A7BBCA417E3BDD2E315A863FEA7F4 /* PNGZIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNGZIP.h; path = PubNub/Misc/Helpers/PNGZIP.h; sourceTree = "<group>"; };
 		37B0ACA434FE613E1EA887ED7FA7B68F /* PNClientStateParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNClientStateParser.m; path = PubNub/Network/Parsers/PNClientStateParser.m; sourceTree = "<group>"; };
 		382F171D20CF5C34998920900EBC9388 /* NSURLSessionConfiguration+PNConfigurationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSessionConfiguration+PNConfigurationPrivate.h"; path = "PubNub/Misc/Categories/NSURLSessionConfiguration+PNConfigurationPrivate.h"; sourceTree = "<group>"; };
@@ -505,7 +508,7 @@
 		42811554D625F22F8D503E52F9911454 /* PNErrorParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNErrorParser.h; path = PubNub/Network/Parsers/PNErrorParser.h; sourceTree = "<group>"; };
 		447721BAFB48258EFB1B4EF044F37385 /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
 		448B93C731922A611BEAC6E13A8AA5EA /* NUPushMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NUPushMessage.h; sourceTree = "<group>"; };
-		450BBBC78FE018C46C23B85AB1D76867 /* PubNub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PubNub.framework; path = PubNub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		450BBBC78FE018C46C23B85AB1D76867 /* PubNub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PubNub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DA311C7B7FCDD0222A82CCFDCCCC21 /* NUPrefetchTrackerClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NUPrefetchTrackerClient.m; sourceTree = "<group>"; };
 		461E1380DE3CDC9AA9FF38D8323C0A35 /* PNEnvelopeInformation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNEnvelopeInformation.m; path = PubNub/Data/PNEnvelopeInformation.m; sourceTree = "<group>"; };
 		468FEEB4A1AFE4A9BB2050F45E9AADA8 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Classes/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
@@ -527,7 +530,6 @@
 		55E34167FE668502148B9491EC3D7CB1 /* PNAcknowledgmentStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNAcknowledgmentStatus.m; path = "PubNub/Data/Service Objects/PNAcknowledgmentStatus.m"; sourceTree = "<group>"; };
 		5671B0252336F0BC506A89588D48C5C9 /* PNPresenceChannelHereNowResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPresenceChannelHereNowResult.h; path = "PubNub/Data/Service Objects/PNPresenceChannelHereNowResult.h"; sourceTree = "<group>"; };
 		56F277CB141F209BCEACC93B6F22A633 /* NextUser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NextUser.xcconfig; sourceTree = "<group>"; };
-		572223F417C765F97A951DAD7C8B9F42 /* NUPurchaseItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NUPurchaseItem.h; sourceTree = "<group>"; };
 		575BEE87DD62424DCDE0905DC97820F5 /* Pods-NextUser_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NextUser_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		57BF1CFC0A484B83B5F3C42935BBDEA8 /* PNAPNSAuditAPICallBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNAPNSAuditAPICallBuilder.h; path = "PubNub/Data/Builders/API Call/APNS/PNAPNSAuditAPICallBuilder.h"; sourceTree = "<group>"; };
 		57D2177616E0A3AA144826C667818CDB /* PubNub+Presence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+Presence.h"; path = "PubNub/Core/PubNub+Presence.h"; sourceTree = "<group>"; };
@@ -546,7 +548,7 @@
 		5DC5BBBE015A2C35323E78E18B653071 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		5E3D7946B94AF9980480947E20DA84B2 /* PNResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNResult.h; path = "PubNub/Data/Service Objects/PNResult.h"; sourceTree = "<group>"; };
 		5E57D84ED6B5B74A12A624369306716F /* NUAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NUAction.m; sourceTree = "<group>"; };
-		5EBBAFAF7C6B4CA5D0C0465B7EC2A5E7 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EBBAFAF7C6B4CA5D0C0465B7EC2A5E7 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECAB446E34728EDD23D3021052EC1B4 /* PNChannelGroupClientStateResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChannelGroupClientStateResult.m; path = "PubNub/Data/Service Objects/PNChannelGroupClientStateResult.m"; sourceTree = "<group>"; };
 		5EE4FD890D254869A4E78639CDF927C5 /* PNAPICallBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNAPICallBuilder.m; path = PubNub/Data/Builders/PNAPICallBuilder.m; sourceTree = "<group>"; };
 		5F0B3A8260AE20623113DC6757426A50 /* PNAPNSEnabledChannelsResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNAPNSEnabledChannelsResult.m; path = "PubNub/Data/Service Objects/PNAPNSEnabledChannelsResult.m"; sourceTree = "<group>"; };
@@ -556,7 +558,7 @@
 		61EF01850B6E94E75B37B1359F795515 /* NextUser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NextUser-prefix.pch"; sourceTree = "<group>"; };
 		62435DB7FBA6CE72B24C417C5B48926B /* PNHeartbeat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNHeartbeat.m; path = PubNub/Data/Managers/PNHeartbeat.m; sourceTree = "<group>"; };
 		62A7263222DBBE6115C1FE0EE6E8F0A9 /* PNStateListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNStateListener.m; path = PubNub/Data/Managers/PNStateListener.m; sourceTree = "<group>"; };
-		63845F5DF3FE8C0C08BC619BBBA1298B /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63845F5DF3FE8C0C08BC619BBBA1298B /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AD3F7DC4B06621BD77AB12A794BAB6 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		644AC6198EF6337FB6832C1F7C3284C9 /* Pods-NextUser_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NextUser_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		64EF08754C377393F46F632AAE1F4661 /* PubNub-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PubNub-prefix.pch"; sourceTree = "<group>"; };
@@ -569,7 +571,7 @@
 		68B17B5EAED7EFB095A2A69A10EE083A /* PNChannelGroupClientStateResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChannelGroupClientStateResult.h; path = "PubNub/Data/Service Objects/PNChannelGroupClientStateResult.h"; sourceTree = "<group>"; };
 		68BD661359C16787ED627E0D272232C5 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		6A2AE262C952AB4D44907F649DEFFB3B /* PNChannelGroupChannelsResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChannelGroupChannelsResult.h; path = "PubNub/Data/Service Objects/PNChannelGroupChannelsResult.h"; sourceTree = "<group>"; };
-		6A4CCF4B957EA41146AB6E201B2B07C5 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
+		6A4CCF4B957EA41146AB6E201B2B07C5 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
 		6C345ACC0E09680EA9434EED48C245E0 /* PNConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNConfiguration.m; path = PubNub/Data/PNConfiguration.m; sourceTree = "<group>"; };
 		6E5E10196F4F5E9B4B54414B9D4BBB1D /* PNKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNKeychain.h; path = PubNub/Data/PNKeychain.h; sourceTree = "<group>"; };
 		6EB6FD9D0568172E76926C867CA7D95B /* PNErrorCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNErrorCodes.h; path = PubNub/Misc/PNErrorCodes.h; sourceTree = "<group>"; };
@@ -612,7 +614,7 @@
 		8F8543E2D4501643BBC588639A356A9B /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
 		90EA405F1D84C824377D033AEFEAB82A /* PNNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNNumber.m; path = PubNub/Misc/Helpers/PNNumber.m; sourceTree = "<group>"; };
 		918F93EC2598A3CF9D345BC833716B96 /* PubNub+State.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+State.m"; path = "PubNub/Core/PubNub+State.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94D64B5084B817F0C784F49FE23081DD /* PNErrorStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNErrorStatus.h; path = "PubNub/Data/Service Objects/PNErrorStatus.h"; sourceTree = "<group>"; };
 		95E58FE7CC217849A198A523AF788052 /* PNParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNParser.h; path = PubNub/Misc/Protocols/PNParser.h; sourceTree = "<group>"; };
 		961C6D456FF25BAD86E354BC6F8BA30B /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
@@ -620,7 +622,7 @@
 		97A2111FF97A1E03283A6AD63A077F7F /* PNErrorParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNErrorParser.m; path = PubNub/Network/Parsers/PNErrorParser.m; sourceTree = "<group>"; };
 		9803466E5C89C92B963F4AAF42784A33 /* NUPrefetchTrackerClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NUPrefetchTrackerClient.h; sourceTree = "<group>"; };
 		9831AB696111ABF8427503A10E5A65DC /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
-		98866D5FFFFA3277C6DD89B48C701B55 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		98866D5FFFFA3277C6DD89B48C701B55 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		98BCE3BF11B4E48549757BB0EAD336A9 /* PNPresenceWhereNowParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPresenceWhereNowParser.m; path = PubNub/Network/Parsers/PNPresenceWhereNowParser.m; sourceTree = "<group>"; };
 		98EB3FBD330606E33F47FED58D00F8B6 /* PubNub+Time.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+Time.h"; path = "PubNub/Core/PubNub+Time.h"; sourceTree = "<group>"; };
 		99C4E0C9661ED7247F4160A6C19FC48C /* NUIAMNotificationView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = NUIAMNotificationView.xib; sourceTree = "<group>"; };
@@ -629,14 +631,14 @@
 		9B4045BC7D81C919CFC3D51127A07972 /* PNDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNDictionary.h; path = PubNub/Misc/Helpers/PNDictionary.h; sourceTree = "<group>"; };
 		9B8A3000E18F973E3ABB7180810F7344 /* PNNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNNetwork.h; path = PubNub/Network/PNNetwork.h; sourceTree = "<group>"; };
 		9C14E70197A21DE51936887CF79AF7D3 /* PNPublishSizeAPICallBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPublishSizeAPICallBuilder.h; path = "PubNub/Data/Builders/API Call/Publish/PNPublishSizeAPICallBuilder.h"; sourceTree = "<group>"; };
-		9C42DEDA0AB82291933CB06548FA46EE /* Pods_NextUser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NextUser_Tests.framework; path = "Pods-NextUser_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C42DEDA0AB82291933CB06548FA46EE /* Pods_NextUser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextUser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2DD28DFA8BB6F4945AAF4CE6FD5F0F /* PNClientState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNClientState.h; path = PubNub/Data/Managers/PNClientState.h; sourceTree = "<group>"; };
 		9DC812DE1B6A0AEC1F716A15E91066E7 /* SSKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
 		9E7715F70EB6A62BA77C65C5B26216C7 /* PNStateAPICallBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNStateAPICallBuilder.h; path = "PubNub/Data/Builders/API Call/State/PNStateAPICallBuilder.h"; sourceTree = "<group>"; };
 		9E8DD316BE51CF923477E0949954FBA7 /* PNStreamAuditAPICallBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNStreamAuditAPICallBuilder.m; path = "PubNub/Data/Builders/API Call/Stream/PNStreamAuditAPICallBuilder.m"; sourceTree = "<group>"; };
 		9ECA608BD29C99041B9029D5B36D6272 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
 		9FA74F6017EADE45750AA59BF422B741 /* NUTrackingHTTPRequestHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NUTrackingHTTPRequestHelper.h; sourceTree = "<group>"; };
-		9FE4728D8AB899E9A66199A40600DF63 /* NextUser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NextUser.modulemap; sourceTree = "<group>"; };
+		9FE4728D8AB899E9A66199A40600DF63 /* NextUser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NextUser.modulemap; sourceTree = "<group>"; };
 		9FE5228BDB2B320C3AA13FEA662C3589 /* PNString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNString.h; path = PubNub/Misc/Helpers/PNString.h; sourceTree = "<group>"; };
 		A03BA41E6894054AB285287326F8B46C /* NUTrackingHTTPRequestHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NUTrackingHTTPRequestHelper.m; sourceTree = "<group>"; };
 		A0DDE9077FECDB8CF62114BC2611557B /* PNHeartbeat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNHeartbeat.h; path = PubNub/Data/Managers/PNHeartbeat.h; sourceTree = "<group>"; };
@@ -665,7 +667,7 @@
 		B2A81278E5B654D346ED2D8E2FC9B64F /* PNServiceData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNServiceData.m; path = "PubNub/Data/Service Objects/PNServiceData.m"; sourceTree = "<group>"; };
 		B2ECC053B81714C941EBED828AF5138D /* PNNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNNetwork.m; path = PubNub/Network/PNNetwork.m; sourceTree = "<group>"; };
 		B2F648F30E829FB953690D634F652C72 /* PNURLRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNURLRequest.m; path = PubNub/Misc/Helpers/PNURLRequest.m; sourceTree = "<group>"; };
-		B3E0DCF303125ACCA627B73C0385B7BB /* Pods_NextUser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NextUser_Example.framework; path = "Pods-NextUser_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E0DCF303125ACCA627B73C0385B7BB /* Pods_NextUser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextUser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40FB2ADC536397411FA3821C2F4B4B0 /* PNSubscribeChannelsOrGroupsAPIBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNSubscribeChannelsOrGroupsAPIBuilder.h; path = "PubNub/Data/Builders/API Call/Subscribe/PNSubscribeChannelsOrGroupsAPIBuilder.h"; sourceTree = "<group>"; };
 		B421384AE682B62F2E1673F9ED8F6B2F /* PNErrorStatus+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PNErrorStatus+Private.h"; path = "PubNub/Data/Service Objects/PNErrorStatus+Private.h"; sourceTree = "<group>"; };
 		B4251EC3EC007C9022F6518F6767D67A /* PNPresenceWhereNowResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPresenceWhereNowResult.m; path = "PubNub/Data/Service Objects/PNPresenceWhereNowResult.m"; sourceTree = "<group>"; };
@@ -681,7 +683,7 @@
 		BA05744BAAF485C1B8853240D49A3B0A /* PNHistoryAPICallBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNHistoryAPICallBuilder.m; path = "PubNub/Data/Builders/API Call/History/PNHistoryAPICallBuilder.m"; sourceTree = "<group>"; };
 		BA093D70C0545CD60C2D4CEABDB24A9D /* PNHeartbeatParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNHeartbeatParser.m; path = PubNub/Network/Parsers/PNHeartbeatParser.m; sourceTree = "<group>"; };
 		BA5B3DC8A1DD00346AF96087B2E97FE4 /* NextUser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NextUser-umbrella.h"; sourceTree = "<group>"; };
-		BA7D886CC4F7695C350ABC9FF81CD02F /* PubNub.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PubNub.modulemap; sourceTree = "<group>"; };
+		BA7D886CC4F7695C350ABC9FF81CD02F /* PubNub.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PubNub.modulemap; sourceTree = "<group>"; };
 		BB3839EC7FB909279C2DD2F282C2D64F /* Pods-NextUser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NextUser_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BBA38A3D2F286A3A97C9B93C80FE0078 /* PNChannelClientStateResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChannelClientStateResult.h; path = "PubNub/Data/Service Objects/PNChannelClientStateResult.h"; sourceTree = "<group>"; };
 		BBACEEC3AF8C0A2D2452C400BD43A6A2 /* PNLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLLogger.m; path = PubNub/Misc/Logger/Core/PNLLogger.m; sourceTree = "<group>"; };
@@ -700,7 +702,6 @@
 		C2FC01A8D4082D0AA8D429D8DF95B67E /* NSError+NextUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+NextUser.h"; sourceTree = "<group>"; };
 		C305147862E635EC37DB312A0992425B /* PNHistoryAPICallBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNHistoryAPICallBuilder.h; path = "PubNub/Data/Builders/API Call/History/PNHistoryAPICallBuilder.h"; sourceTree = "<group>"; };
 		C33944A307A816513F394631F35F306E /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		C4478B5E12349F6E4B8BEBF051DBB0B8 /* NUAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NUAction.h; sourceTree = "<group>"; };
 		C490C998F76B50DEED5EA1D6D327A728 /* PNPresenceHereNowParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPresenceHereNowParser.h; path = PubNub/Network/Parsers/PNPresenceHereNowParser.h; sourceTree = "<group>"; };
 		C4EE24EBA50AC78D334A7803EABCEEDB /* PNHeartbeatParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNHeartbeatParser.h; path = PubNub/Network/Parsers/PNHeartbeatParser.h; sourceTree = "<group>"; };
 		C55601665A8235BF4CE04437E867E0F9 /* PNHistoryResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNHistoryResult.h; path = "PubNub/Data/Service Objects/PNHistoryResult.h"; sourceTree = "<group>"; };
@@ -725,7 +726,7 @@
 		D4DDCED5F5C7E9C3A20E136FC82F9DF6 /* PNStructures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNStructures.h; path = PubNub/Misc/PNStructures.h; sourceTree = "<group>"; };
 		D54CB37010744C5CEE8AED20A77F99D4 /* NUPurchase+Tests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NUPurchase+Tests.h"; sourceTree = "<group>"; };
 		D659F6FC96C88380452F3A461E971AAC /* NUIAMContentView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = NUIAMContentView.xib; sourceTree = "<group>"; };
-		D6998ECD30FDBE36580E57BF6D72C47E /* Pods-NextUser_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NextUser_Tests.modulemap"; sourceTree = "<group>"; };
+		D6998ECD30FDBE36580E57BF6D72C47E /* Pods-NextUser_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NextUser_Tests.modulemap"; sourceTree = "<group>"; };
 		D6B71067DB49EBC5E5BDF40C21BB9294 /* NUInAppMessageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NUInAppMessageManager.h; sourceTree = "<group>"; };
 		D70F7915A70EDB7FF590D31BE5CE3261 /* PNMessagePublishParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNMessagePublishParser.m; path = PubNub/Network/Parsers/PNMessagePublishParser.m; sourceTree = "<group>"; };
 		D74918455C963D0946F7D631C9E73F0A /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -734,7 +735,7 @@
 		D8AB97C8607A56556D516531D2A7D4FD /* PNSubscribeParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNSubscribeParser.h; path = PubNub/Network/Parsers/PNSubscribeParser.h; sourceTree = "<group>"; };
 		D936BBF8EA543EAEBD7BE5DDC6ED81FF /* PNPresenceWhereNowAPICallBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPresenceWhereNowAPICallBuilder.m; path = "PubNub/Data/Builders/API Call/Presence/PNPresenceWhereNowAPICallBuilder.m"; sourceTree = "<group>"; };
 		D9471C8F281871BC96793B0A26053A4B /* PNResult+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PNResult+Private.h"; path = "PubNub/Data/Service Objects/PNResult+Private.h"; sourceTree = "<group>"; };
-		DA1E576BE6638338F64C631B4051CA00 /* SSKeychain.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = SSKeychain.strings; path = en.lproj/SSKeychain.strings; sourceTree = "<group>"; };
+		DA1E576BE6638338F64C631B4051CA00 /* SSKeychain.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = SSKeychain.strings; path = en.lproj/SSKeychain.strings; sourceTree = "<group>"; };
 		DA219ED9C9C0B68920F35C480B1B950D /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
 		DA6023276799C5F4BC55459515A27CF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8743DF6FB7D11AAF1CE916A9298391 /* PubNub+State.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+State.h"; path = "PubNub/Core/PubNub+State.h"; sourceTree = "<group>"; };
@@ -753,7 +754,6 @@
 		E53E4608EDD59433CEAF291ADD70D40F /* PNJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNJSON.h; path = PubNub/Misc/Helpers/PNJSON.h; sourceTree = "<group>"; };
 		E554CA5A24EC726DB54581BC5F527720 /* PNRequestParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNRequestParameters.m; path = PubNub/Network/PNRequestParameters.m; sourceTree = "<group>"; };
 		E6087488AF0EF69C3CD8BC8A5787A03A /* PNStateAuditAPICallBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNStateAuditAPICallBuilder.m; path = "PubNub/Data/Builders/API Call/State/PNStateAuditAPICallBuilder.m"; sourceTree = "<group>"; };
-		E6947FFBCED18326E6447528AD2F41CB /* NUPurchaseDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NUPurchaseDetails.h; sourceTree = "<group>"; };
 		E7E3F26E7FF87049D7E4917ADFC90936 /* NUPurchaseDetails.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NUPurchaseDetails.m; sourceTree = "<group>"; };
 		E812C88FB19BA0AD24E98492A90AA844 /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Classes/DDTTYLogger.h; sourceTree = "<group>"; };
 		EBF9AE3D919E2E8D3F92170FB5E04410 /* PNPresenceChannelGroupHereNowResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPresenceChannelGroupHereNowResult.m; path = "PubNub/Data/Service Objects/PNPresenceChannelGroupHereNowResult.m"; sourceTree = "<group>"; };
@@ -860,6 +860,19 @@
 				450BBBC78FE018C46C23B85AB1D76867 /* PubNub.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1112E24D1E3E5F2B0059FC37 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				1112E24E1E3E5F2B0059FC37 /* NUAction.h */,
+				1112E24F1E3E5F2B0059FC37 /* NUErrorDefinitions.h */,
+				1112E2501E3E5F2B0059FC37 /* NUPurchase.h */,
+				1112E2511E3E5F2B0059FC37 /* NUPurchaseDetails.h */,
+				1112E2521E3E5F2B0059FC37 /* NUPurchaseItem.h */,
+				1112E2531E3E5F2B0059FC37 /* NUTracker.h */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 		14D50B418DF05D5487E58AA96E36615A /* Core */ = {
@@ -1113,7 +1126,6 @@
 				14D50B418DF05D5487E58AA96E36615A /* Core */,
 				7BC933EFB570FC9BAE4DD69F2B623A95 /* Support Files */,
 			);
-			name = PubNub;
 			path = PubNub;
 			sourceTree = "<group>";
 		};
@@ -1122,7 +1134,6 @@
 			children = (
 				BBDD80614666E814C081E5D169A3DE7C /* SSKeychain */,
 			);
-			name = lib_3rdParty;
 			path = lib_3rdParty;
 			sourceTree = "<group>";
 		};
@@ -1257,19 +1268,18 @@
 		82E6F9929116AA0D8C8039060107C548 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1112E24D1E3E5F2B0059FC37 /* Public */,
 				FF42CBF61658456C95F29F478E96F973 /* NextUserKit.h */,
 				C2FC01A8D4082D0AA8D429D8DF95B67E /* NSError+NextUser.h */,
 				B11A32F61C421D0D9000ED1B38C3B2A8 /* NSError+NextUser.m */,
 				094EE9283A9C79F88077804F672560F6 /* NSString+LGUtils.h */,
 				5567B51A94B9BFB658109808A87DDDE4 /* NSString+LGUtils.m */,
-				C4478B5E12349F6E4B8BEBF051DBB0B8 /* NUAction.h */,
 				5E57D84ED6B5B74A12A624369306716F /* NUAction.m */,
 				8E21819A9531BE194D8F556902361CAA /* NUAction+Serialization.h */,
 				5CE2FFCED96FB318A3E66DE9ABA1671F /* NUAppWakeUpManager.h */,
 				DC67E781951C8C51DFA3FF67D6B735BC /* NUAppWakeUpManager.m */,
 				E51959F1870B4F54B9403D1680DD5B99 /* NUDDLog.h */,
 				07A6F031EC23D03898AAEA9613032286 /* NUDDLog.m */,
-				364EC92F0B36578BA85480EE47734DEF /* NUErrorDefinitions.h */,
 				F2B5282D909F244E0BDC26E054E09539 /* NUHTTPRequestUtils.h */,
 				1A88C0B4B8EE90EF2A211ED5AEBB4423 /* NUHTTPRequestUtils.m */,
 				B125CF9558FBC4C81570658F5FB5C543 /* NUIAMContentView.h */,
@@ -1288,13 +1298,10 @@
 				45DA311C7B7FCDD0222A82CCFDCCCC21 /* NUPrefetchTrackerClient.m */,
 				F39D406121D728339C7AF9060EFCE721 /* NUPubNubClient.h */,
 				FAC24AB6F712D397338E94910DE7B8C8 /* NUPubNubClient.m */,
-				1453BEB33864BB6CC1FF1070022F7572 /* NUPurchase.h */,
 				1C5BD32A05532DAE33D1F05B6DF0EA98 /* NUPurchase.m */,
 				B2266EBF73E8A6AA1090459E264E536E /* NUPurchase+Serialization.h */,
 				D54CB37010744C5CEE8AED20A77F99D4 /* NUPurchase+Tests.h */,
-				E6947FFBCED18326E6447528AD2F41CB /* NUPurchaseDetails.h */,
 				E7E3F26E7FF87049D7E4917ADFC90936 /* NUPurchaseDetails.m */,
-				572223F417C765F97A951DAD7C8B9F42 /* NUPurchaseItem.h */,
 				FA49850B685C233DE4968D5102DFC71A /* NUPurchaseItem.m */,
 				448B93C731922A611BEAC6E13A8AA5EA /* NUPushMessage.h */,
 				61935E9D9B93C62F20B6CC6D5AE609F4 /* NUPushMessage.m */,
@@ -1305,7 +1312,6 @@
 				BDF417993F91AC6E58595118CFDCF81E /* NURoundedDismissButton.h */,
 				35653571EBF1E0D0B220B17D14306D92 /* NURoundedDismissButton.m */,
 				BC6512703F02B7806D702BFC35F98A7C /* NUTrackable.h */,
-				28E3367CF62BF9FF0F539BB7D9D43004 /* NUTracker.h */,
 				1F11E9866A85E5F6EE0BCEF59404D8C5 /* NUTracker.m */,
 				110F3E0BB717376807295DEFB8B9084B /* NUTracker+Tests.h */,
 				4E2A7115989D39735312CD9753652187 /* NUTrackerSession.h */,
@@ -1314,7 +1320,6 @@
 				A03BA41E6894054AB285287326F8B46C /* NUTrackingHTTPRequestHelper.m */,
 				4A9DE57F7DA106270BB0C16993746279 /* lib_3rdParty */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1329,7 +1334,6 @@
 				3A996F34472F5BE1D4B437E7F572EC12 /* Support Files */,
 				67C90395EDDF6B1B234E94464F5E0EE2 /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -1350,7 +1354,6 @@
 				535B884E93ACA0997CE5AE206BFCB9FA /* Extensions */,
 				9D8C8C9B4A7CD6E08E27E3B3CC6D8897 /* Support Files */,
 			);
-			name = CocoaLumberjack;
 			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
@@ -1391,7 +1394,6 @@
 			children = (
 				82E6F9929116AA0D8C8039060107C548 /* Classes */,
 			);
-			name = NextUser;
 			path = NextUser;
 			sourceTree = "<group>";
 		};
@@ -1424,7 +1426,6 @@
 				9DC812DE1B6A0AEC1F716A15E91066E7 /* SSKeychainQuery.h */,
 				C5A6C0C00A019279B3EFCAA837AB5AB5 /* SSKeychainQuery.m */,
 			);
-			name = SSKeychain;
 			path = SSKeychain;
 			sourceTree = "<group>";
 		};
@@ -1644,16 +1645,22 @@
 				7A112C0F21A62CB6F1AA8D917A6EEA6C /* AFNetworkActivityIndicatorManager.h in Headers */,
 				1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */,
 				35CBB7B255FD8D412AFCECBC4311A847 /* AFNetworking.h in Headers */,
+				1112E2571E3E5F2B0059FC37 /* NUPurchaseDetails.h in Headers */,
+				1112E2551E3E5F2B0059FC37 /* NUErrorDefinitions.h in Headers */,
 				93DFC0CC12E763AE770017349EE009D1 /* AFNetworkReachabilityManager.h in Headers */,
 				6573AF9ABA59AC8D1F52B07088197F71 /* AFSecurityPolicy.h in Headers */,
 				F1CAA2EBDDFF558DEF98684F2479A7AF /* AFURLRequestSerialization.h in Headers */,
+				1112E2581E3E5F2B0059FC37 /* NUPurchaseItem.h in Headers */,
 				948458DC0A9308A2D8C018C37FB7BBDD /* AFURLResponseSerialization.h in Headers */,
 				AE976B0E8E3DD81E4F49DBEF19D3C0AD /* AFURLSessionManager.h in Headers */,
 				45F802D04B3BE0CAEC586C2F3016027B /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				1112E2591E3E5F2B0059FC37 /* NUTracker.h in Headers */,
 				2B0705CC26A4CBEE32A5A60284AED35B /* UIButton+AFNetworking.h in Headers */,
+				1112E2541E3E5F2B0059FC37 /* NUAction.h in Headers */,
 				9264BD69AFA8EE74F0D7F0EBD74F762F /* UIImage+AFNetworking.h in Headers */,
 				0D1FFD30267C0776FD3E88EFF51E312F /* UIImageView+AFNetworking.h in Headers */,
 				E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */,
+				1112E2561E3E5F2B0059FC37 /* NUPurchase.h in Headers */,
 				F84DD74BB7F612DE372F8C051420DF72 /* UIProgressView+AFNetworking.h in Headers */,
 				00C05031BBA5BA48A00FE41348F41BDA /* UIRefreshControl+AFNetworking.h in Headers */,
 				51047C1945103943F70BEADE83725630 /* UIWebView+AFNetworking.h in Headers */,
@@ -1669,10 +1676,8 @@
 				FF8BF0B60FDE31ED346D9936B5CB3452 /* NSError+NextUser.h in Headers */,
 				B417AE9FD5F203C661D08D23257ED9C9 /* NSString+LGUtils.h in Headers */,
 				093B11D00EE98F6009EAC34C0F999824 /* NUAction+Serialization.h in Headers */,
-				5BA1755B6C344AD9A323D93DCBCC0BEF /* NUAction.h in Headers */,
 				919D3B2AB801C7378D1DA29554B84DD0 /* NUAppWakeUpManager.h in Headers */,
 				B85986C49478338400F3308EC4148DD9 /* NUDDLog.h in Headers */,
-				21C89E421452D6EF249160949D2D29AC /* NUErrorDefinitions.h in Headers */,
 				A39150D656BB51F66426C60C95155094 /* NUHTTPRequestUtils.h in Headers */,
 				45C3230F891D5447C37A0C033C5E776E /* NUIAMContentView.h in Headers */,
 				F393F3DD5E07FEF29CED0685EBFF3355 /* NUIAMNotificationView.h in Headers */,
@@ -1683,16 +1688,12 @@
 				CBFAD8DD30A0769794D52BF6D17F08C5 /* NUPubNubClient.h in Headers */,
 				5888BA7D0FF90BE43D32E92F71A3E776 /* NUPurchase+Serialization.h in Headers */,
 				26C25B4240915C982AD175C28FD93DCC /* NUPurchase+Tests.h in Headers */,
-				8DB1361B37FB88BC4DDBD8C1E96E0754 /* NUPurchase.h in Headers */,
-				10F6498B0C4C1D4F7A80D935B565296A /* NUPurchaseDetails.h in Headers */,
-				F571CBF2CE379ECA6553858B80829B6F /* NUPurchaseItem.h in Headers */,
 				F1051CEBEC31D5A9425FC962D7715E3D /* NUPushMessage.h in Headers */,
 				A1FF57AF5ED972ECD1C7E8DAC6C9619E /* NUPushMessageService.h in Headers */,
 				FDEDC531BC959E3D5B8EF9C3681414FC /* NUPushMessageServiceFactory.h in Headers */,
 				DEDDCCCEEB3BCD047CE09BB70FE43EFE /* NURoundedDismissButton.h in Headers */,
 				2A80F312BF1CF402FA17672A8D85EE7B /* NUTrackable.h in Headers */,
 				835A92DA3AF81C91936C7F3F990F1B54 /* NUTracker+Tests.h in Headers */,
-				564476EE512DD347C7BFC335CE2BFACD /* NUTracker.h in Headers */,
 				9FEB56EC16777B2EFAFE8615B926D632 /* NUTrackerSession.h in Headers */,
 				B1E78036AF00CCFA01D46F2995046382 /* NUTrackingHTTPRequestHelper.h in Headers */,
 				08F7AC6E0F2148E94DCE83AAB3CC73FF /* SSKeychain.h in Headers */,

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NextUser'
-  s.version          = '0.1.1'
+  s.version          = '0.1.7'
   s.summary          = 'iOS SDK for the NextUser API.'
 
 # This description is used to generate tags and improve search results.
@@ -31,12 +31,12 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'NextUser/Classes/**/*'
-  
+  s.public_header_files = 'NextUser/Classes/Public/**/*.h'
   # s.resource_bundles = {
   #   'NextUser' => ['NextUser/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+    
   # s.frameworks = 'UIKit', 'MapKit'
     s.libraries = 'z'
 
