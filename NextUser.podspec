@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NextUser'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'iOS SDK for the NextUser API.'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/NextUserSF/mobile-sdk-ios'
+  s.homepage         = 'https://github.com/Dino4674/NUPodSpecsTestPod'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Next User' => 'dino.bartosak@gmail.com' }
