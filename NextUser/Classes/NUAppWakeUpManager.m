@@ -136,15 +136,17 @@
 
 + (BOOL)areLocationServicesEnabled
 {
-    BOOL enabled = NO;
+//    BOOL enabled = NO;
+//    
+//    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
+//        enabled = [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways;
+//    } else {
+//        enabled = [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorized;
+//    }
+//    
+//    return enabled;
     
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
-        enabled = [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways;
-    } else {
-        enabled = [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorized;
-    }
-    
-    return enabled;
+    return [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways;
 }
 
 + (BOOL)canStartMonitoringSignificanLocationChanges
