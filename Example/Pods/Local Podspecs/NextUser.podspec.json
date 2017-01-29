@@ -13,8 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Dino4674/NextUserKitTestPod.git",
-    "tag": "0.1.0",
-    "branch": "dev"
+    "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
