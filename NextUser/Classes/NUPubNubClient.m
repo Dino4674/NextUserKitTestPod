@@ -119,8 +119,8 @@
     
     NSLog(@"Did receive message:");
     NSLog(@"%@", message.data.message);
-    NSLog(@"Subscribed channel: %@", message.data.subscribedChannel);
-    NSLog(@"Actual channel:     %@", message.data.actualChannel);
+    NSLog(@"Subscribed channel: %@", message.data.subscription);
+    NSLog(@"Actual channel:     %@", message.data.channel);
     
     id messageContent = message.data.message;
     if (messageContent) {
