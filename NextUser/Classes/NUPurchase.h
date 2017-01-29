@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class NUPurchaseDetails;
+@class NUPurchaseItem;
 
 /**
  *  This class represents a general purchase. When user makes a purchase inside your application and
