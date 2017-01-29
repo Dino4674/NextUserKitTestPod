@@ -8,9 +8,9 @@
 
 #import "NUPubNubClient.h"
 #import "NUTrackerSession.h"
-#import "PubNub.h"
 #import "NUPushMessage.h"
 #import "NUIAMUITheme.h"
+@import PubNub;
 
 @interface NUPubNubClient () <PNObjectEventListener>
 
@@ -24,8 +24,8 @@
 {
     if (self = [super initWithSession:session]) {
         
-        [PNLog enabled:NO];
-        
+//        [PNLog enabled:NO];
+                
         NSString *publishKey = session.pubNubConfiguration.publishKey;
         NSString *subscribeKey = session.pubNubConfiguration.subscribeKey;
         
