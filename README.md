@@ -20,6 +20,12 @@ Import *NextUserKit* into the file where you will be using it:
 #import <NextUserKit/NextUserKit.h>
 ```
 
+or depending if you are using frameworks:
+
+```objective-c
+@import NextUser;
+```
+
 The main object you are interested in is the *NUTracker* singleton object. To get a reference to it, use singleton getter:
 
 ```objective-c
