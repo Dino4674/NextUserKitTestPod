@@ -8,14 +8,14 @@
 
 #import "NUAppDelegate.h"
 
-
 @import PubNub;
 @import CocoaLumberjack;
+@import NextUser;
 
 @implementation NUAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+{   
     // Override point for customization after application launch.
     return YES;
 }
